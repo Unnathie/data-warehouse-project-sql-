@@ -1,6 +1,6 @@
 /*
 ======================================================================
- Script:     proc_load_silver.sql
+ Script:     procedure_load_silver.sql
  Procedure:  Silver.load_silver
  Author:     Unnathi E Naik
  Date:       2025-11-10
