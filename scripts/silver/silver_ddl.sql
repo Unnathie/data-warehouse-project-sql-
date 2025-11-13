@@ -1,3 +1,22 @@
+/*
+=============================================================
+ Script:     silver_schema_setup.sql
+ Author:     Unnathi E Naik
+ Date:       2025-11-10
+ Layer:      Silver (Data Warehouse)
+=============================================================
+ Description:
+ This script creates the Silver-layer tables for both CRM and ERP data.
+ The Silver layer serves as a cleaned, structured, and standardized zone
+ within the data warehouse, built upon the raw Bronze data layer.
+
+ Key Features:
+ - Drops existing Silver tables (if present) to ensure a clean rebuild.
+ - Creates CRM and ERP tables with appropriate data types.
+ - Adds 'dwh_create_date' to each table to track data warehouse load time.
+ - Ensures schema consistency for downstream transformations into the Gold layer.
+=============================================================
+*/
 ------------FOR CRM---------------
 IF OBJECT_ID ('silver.crm_cust_info','U') IS NOT NULL
 DROP TABLE silver.crm_cust_info;
