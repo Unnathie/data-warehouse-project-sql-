@@ -52,7 +52,7 @@ Delivers a transaction-level sales fact table linking customers and products for
 | product_key   | INT           | Foreign key linking to dim_products.  |
 | customer_key  | INT           | Foreign key linking to dim_customer.  |
 | order_date    | DATE          | Date validated in Silver:             |
-                                | invalid 0/incorrect length → NULL.   |
+                                | invalid 0/incorrect length → NULL.    |
 | shipping_date | DATE          | Date the order was shipped.           |
 | due_date      | DATE          | Expected order delivery date.         |
 | sales_amount  | INT           | Total sale amount for the order line. |
